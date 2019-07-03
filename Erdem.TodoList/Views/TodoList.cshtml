@@ -1,0 +1,38 @@
+﻿@{
+    Style.Require("Erdem.TodoList.TodoList");
+}
+<article class="todolist">
+    <table>
+        <thead>
+            <tr>
+                <td>Works</td>
+                <td class="numeric">TaskTitle</td>
+                <td class="numeric">TaskContent</td>
+                <td class=" numeric">TaskStatu</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < 10; i++)
+            {
+                <tr>
+                    <td class="numeric"> work+i </td>
+                    <td class="numeric">task title </td>
+                    <td class="numeric"> task content </td>
+                    <td class="numeric"> task statu</td>
+                </tr>
+            }
+
+        </tbody>
+        <!-- horizontol line -->
+        <tfoot>
+            <tr class="separator"><td colspan="4">&nbsp;</td></tr>
+        </tfoot>
+    </table>
+    <footer>
+        <div class="group">
+            <div class="align left"><a class="button" href="#">Button left </a></div>
+            <div class="align right"><a class="button next" href="#">Button right</a></div>
+        </div>
+    </footer>
+</article>
