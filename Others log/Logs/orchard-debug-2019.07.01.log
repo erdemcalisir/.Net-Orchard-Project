@@ -1,0 +1,1439 @@
+2019-07-01 01:51:47,457 [14] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 01:51:47,496 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:47,558 [14] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:47,569 [14] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 01:51:47,571 [14] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:47,581 [14] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 01:51:47,584 [14] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 01:51:47,598 [14] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 01:51:59,008 [13] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 01:51:59,011 [13] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:59,016 [13] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:59,021 [13] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 01:51:59,023 [13] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 01:51:59,028 [13] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 01:51:59,030 [13] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 01:51:59,034 [13] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:09:44,206 [5] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:09:44,237 [5] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:09:44,265 [5] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (29).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:09:44,274 [5] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:09:44,276 [5] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:09:44,282 [5] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:09:44,285 [5] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 02:09:44,293 [5] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:13:36,327 [31] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:13:36,330 [31] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:13:36,337 [31] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (30).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:13:36,341 [31] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:13:36,344 [31] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:13:36,348 [31] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:13:36,350 [31] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 02:13:36,354 [31] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:17:25,728 [26] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:25,756 [26] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:25,787 [26] NHibernate.Event.Default.AbstractFlushingEventListener - Default - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (31).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:25,789 [26] Orchard.ContentManagement.DefaultContentManager - Default - ERROR GenericADOException thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (31).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:25,804 [26] NHibernate.Event.Default.AbstractFlushingEventListener - Default - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (31).
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (31).
+The statement has been terminated.
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:38,618 [9] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:38,620 [9] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:38,626 [9] NHibernate.Event.Default.AbstractFlushingEventListener - Default - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (32).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:38,629 [9] Orchard.ContentManagement.DefaultContentManager - Default - ERROR GenericADOException thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (32).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:38,638 [9] NHibernate.Event.Default.AbstractFlushingEventListener - Default - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (32).
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (32).
+The statement has been terminated.
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:54,431 [38] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:17:54,434 [38] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:54,443 [38] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (33).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:54,448 [38] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:17:54,451 [38] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:17:54,454 [38] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:17:54,457 [38] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 02:17:54,463 [38] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:18:17,965 [41] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:18:17,968 [41] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:18:17,973 [41] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (34).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:18:17,977 [41] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:18:17,980 [41] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:18:17,984 [41] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:18:17,986 [41] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 02:18:17,989 [41] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:26:21,239 [9] NHibernate.Event.Default.AbstractFlushingEventListener - (null) - ERROR Could not synchronize database state with session
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2019-07-01 02:26:21,269 [9] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Autoroute.Drivers.AutoroutePartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions()
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 191
+   konum: Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.Slice(Int32 skip, Int32 count) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentQuery.cs içinde: satýr 296
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePage(VersionOptions version)
+   konum: Orchard.Autoroute.Services.HomeAliasService.GetHomePageId(VersionOptions version)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, IUpdateModel updater, Object shapeHelper)
+   konum: Orchard.Autoroute.Drivers.AutoroutePartDriver.Editor(AutoroutePart part, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 62
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:26:21,297 [9] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - Default - ERROR GenericADOException thrown from IContentPartDriver by Orchard.Tags.Drivers.TagsPartDriver
+NHibernate.Exceptions.GenericADOException: could not execute batch command.[SQL: SQL not available] ---> System.Data.SqlClient.SqlException: Invalid column name 'Content'.
+Invalid column name 'State'.
+Violation of PRIMARY KEY constraint 'PK__Title_Ti__3214EC0778758911'. Cannot insert duplicate key in object 'dbo.Title_TitlePartRecord'. The duplicate key value is (37).
+The statement has been terminated.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   konum: System.Data.SqlClient.SqlCommandSet.ExecuteNonQuery()
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.AdoNet.SqlClientBatchingBatcher.DoExecuteBatch(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatchWithTiming(IDbCommand ps)
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteBatch()
+   konum: NHibernate.AdoNet.AbstractBatcher.PrepareBatchCommand(CommandType type, SqlString sql, SqlType[] parameterTypes)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Boolean[] notNull, Int32 j, SqlCommandInfo sql, Object obj, ISessionImplementor session)
+   konum: NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object id, Object[] fields, Object obj, ISessionImplementor session)
+   konum: NHibernate.Action.EntityInsertAction.Execute()
+   konum: NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   konum: NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   konum: NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event)
+   konum: NHibernate.Impl.SessionImpl.Save(Object obj)
+   konum: Orchard.Data.Repository`1.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 93
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 33
+   konum: Orchard.Tags.Services.TagService.CreateTag(String tagName)
+   konum: Orchard.Tags.Services.TagService.UpdateTagsForContentItem(ContentItem contentItem, IEnumerable`1 tagNamesForContentItem)
+   konum: Orchard.Tags.Drivers.TagsPartDriver.Editor(TagsPart part, IUpdateModel updater, Object shapeHelper)
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute4[T0,T1,T2,T3,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3)
+   konum: Orchard.ContentManagement.Drivers.ContentPartDriver`1.Orchard.ContentManagement.Drivers.IContentPartDriver.UpdateEditor(UpdateEditorContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs içinde: satýr 67
+   konum: Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClass11_0.<UpdateEditor>b__0(IContentPartDriver driver) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs içinde: satýr 63
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:26:21,306 [9] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:26:21,308 [9] Orchard.ContentManagement.DefaultContentManager - Default - ERROR AssertionFailure thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List(IList results)
+   konum: NHibernate.Impl.CriteriaImpl.List[T]()
+   konum: Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 370
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 168
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 131
+   konum: Orchard.ContentManagement.DefaultContentManager.Get(Int32 id) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 127
+   konum: Orchard.Autoroute.Services.AutorouteService.GenerateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.ProcessAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.CreateAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_0(UpdateContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Updated(UpdateContentContext context, TPart instance) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 206
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 78
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Updated(UpdateContentContext context) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 361
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass52_0.<UpdateEditor>b__1(IContentHandler handler) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 707
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-01 02:26:21,314 [9] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:26:21,317 [9] Orchard.Exceptions.DefaultExceptionPolicy - Default - ERROR An unexpected exception was caught
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.CheckId(Object obj, IEntityPersister persister, Object id, EntityMode entityMode)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.GetValues(Object entity, EntityEntry entry, EntityMode entityMode, Boolean mightBeDirty, ISessionImplementor session)
+   konum: NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   konum: NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   konum: NHibernate.Event.Default.DefaultAutoFlushEventListener.OnAutoFlush(AutoFlushEvent event)
+   konum: NHibernate.Impl.SessionImpl.AutoFlushIfRequired(ISet`1 querySpaces)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   konum: Orchard.Workflows.Services.WorkflowManager.TriggerEvent(String name, IContent target, Func`1 tokensContext)
+   konum: Orchard.Events.DelegateHelper.<>c__DisplayClass16_0`4.<BuildAction>b__0(Object target, Object[] p) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DelegateHelper.cs içinde: satýr 128
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 84
+   konum: Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 70
+   konum: Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) C:\Projeler\Erdem TodoList Module Project\Orchard-1.10.3\src\Orchard\Events\DefaultOrchardEventBus.cs içinde: satýr 53
+2019-07-01 02:26:21,326 [9] NHibernate.AssertionFailure - Default - ERROR An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.Tags.Models.TagRecord entry (don't flush the Session after an exception occurs)
+2019-07-01 02:40:51,615 [1] Orchard.Environment.ShellBuilders.CompositionStrategy - (null) - WARN Identified 'Erdem.TodoList' as an orphaned feature state record in Settings_ShellFeatureRecord.
+2019-07-01 02:41:18,904 [1] Orchard.Environment.ShellBuilders.CompositionStrategy - (null) - WARN Identified 'Erdem.TodoList' as an orphaned feature state record in Settings_ShellFeatureRecord.
+2019-07-01 02:52:02,759 [7] Orchard.Environment.ShellBuilders.CompositionStrategy - (null) - WARN Identified 'Erdem.TodoList' as an orphaned feature state record in Settings_ShellFeatureRecord.

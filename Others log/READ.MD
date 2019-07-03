@@ -1,0 +1,1 @@
+visual studiodan kaldırılmamış projelerin log kayıtları

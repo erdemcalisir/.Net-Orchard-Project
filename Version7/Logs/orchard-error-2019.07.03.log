@@ -1,0 +1,291 @@
+2019-07-03 00:27:38,325 [34] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList]
+Orchard.OrchardException: Shape type ShoppingCart not found
+   konum: Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs içinde: satýr 105
+   konum: Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs içinde: satýr 86
+   konum: Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs içinde: satýr 44
+   konum: Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs içinde: satýr 29
+   konum: CallSite.Target(Closure , CallSite , Object , Object )
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   konum: ASP._Page_Core_Shapes_Views_ShapeResult_Display_cshtml.Execute() C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Shapes\Views\ShapeResult\Display.cshtml içinde: satýr 1
+   konum: System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   konum: System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   konum: System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   konum: System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2019-07-03 01:23:39,321 [91] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.10.3.0, Culture=neutral, PublicKeyToken=null]] [http://localhost:30321/OrchardLocal/work-catalog]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Orchard.Core.Shapes.CoreShapes.EncodeAlternateElement(string)' ile en iyi eþleþen tekrar yüklenen metot bazý geçersiz baðýmsýz deðiþkenlere sahip
+   konum: CallSite.Target(Closure , CallSite , CoreShapes , Object )
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   konum: Orchard.Core.Shapes.CoreShapes.<Discover>b__11_6(ShapeDisplayingContext displaying) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Shapes\CoreShapes.cs içinde: satýr 101
+   konum: Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClass15_0.<Execute>b__1(Action`1 action) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs içinde: satýr 80
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-03 01:23:46,406 [61] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.10.3.0, Culture=neutral, PublicKeyToken=null]] [http://localhost:30321/OrchardLocal/work-catalog]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Orchard.Core.Shapes.CoreShapes.EncodeAlternateElement(string)' ile en iyi eþleþen tekrar yüklenen metot bazý geçersiz baðýmsýz deðiþkenlere sahip
+   konum: CallSite.Target(Closure , CallSite , CoreShapes , Object )
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   konum: Orchard.Core.Shapes.CoreShapes.<Discover>b__11_6(ShapeDisplayingContext displaying) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Shapes\CoreShapes.cs içinde: satýr 101
+   konum: Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClass15_0.<Execute>b__1(Action`1 action) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs içinde: satýr 80
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-03 01:26:47,117 [67] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.10.3.0, Culture=neutral, PublicKeyToken=null]] [http://localhost:30321/OrchardLocal/work-catalog]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Orchard.Core.Shapes.CoreShapes.EncodeAlternateElement(string)' ile en iyi eþleþen tekrar yüklenen metot bazý geçersiz baðýmsýz deðiþkenlere sahip
+   konum: CallSite.Target(Closure , CallSite , CoreShapes , Object )
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   konum: Orchard.Core.Shapes.CoreShapes.<Discover>b__11_6(ShapeDisplayingContext displaying) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Shapes\CoreShapes.cs içinde: satýr 101
+   konum: Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClass15_0.<Execute>b__1(Action`1 action) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs içinde: satýr 80
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
+2019-07-03 01:30:00,100 [62] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:30:06,123 [62] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:33:13,683 [90] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:33:23,990 [62] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:33:45,857 [51] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:33:52,089 [62] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:34:34,453 [65] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/13]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:40:14,826 [72] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.ArgumentException: The parameters dictionary contains a null entry for parameter 'statu' of non-nullable type 'System.Boolean' for method 'System.Web.Mvc.ActionResult Add(Int32, System.String, System.String, Boolean)' in 'Erdem.TodoList.Controllers.TodoListController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parametre adý: parameters
+   konum: System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:45:00,306 [48] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 40
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:46:44,729 [15] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 40
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:49:04,995 [84] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 40
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:49:13,914 [64] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 40
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 01:49:15,511 [15] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 40
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 02:02:18,680 [104] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.InvalidOperationException: Sýra birden çok eþleþen öðe içeriyor
+   konum: System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 39
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 02:02:36,795 [87] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.InvalidOperationException: Sýra birden çok eþleþen öðe içeriyor
+   konum: System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 39
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 02:03:27,245 [81] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.InvalidOperationException: Sýra birden çok eþleþen öðe içeriyor
+   konum: System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 39
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 02:03:46,333 [78] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.InvalidOperationException: Sýra birden çok eþleþen öðe içeriyor
+   konum: System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   konum: Erdem.TodoList.Services.TodoList.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoList.cs içinde: satýr 39
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+2019-07-03 02:43:32,482 [48] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught [http://localhost:30321/OrchardLocal/Erdem.TodoList/TodoList/Add/12]
+System.InvalidOperationException: Sýra birden çok eþleþen öðe içeriyor
+   konum: System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   konum: Erdem.TodoList.Services.TodoListService.Add(Int32 taskId, String taskTitle, String taskContent, Boolean taskStatu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Services\TodoListService.cs içinde: satýr 39
+   konum: Erdem.TodoList.Controllers.TodoListController.Add(Int32 id, String title, String content, Boolean statu) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Modules\Erdem.TodoList\Controllers\TodoListController.cs içinde: satýr 26
+   konum: lambda_method(Closure , ControllerBase , Object[] )
+   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()

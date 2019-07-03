@@ -1,0 +1,386 @@
+2019-07-02 22:18:38,772 [23] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed [(null)]
+System.ArgumentException: Anahtar sözcük desteklenmiyor: 'defaultendpointsprotocol'.
+   konum: System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   konum: System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   konum: System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   konum: System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   konum: System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   konum: System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   konum: System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   konum: NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   konum: NHibernate.AdoNet.ConnectionManager.GetConnection()
+   konum: NHibernate.Impl.SessionImpl.get_Connection()
+   konum: NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2019-07-02 22:18:38,802 [23] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed [(null)]
+System.ArgumentException: Anahtar sözcük desteklenmiyor: 'defaultendpointsprotocol'.
+   konum: System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   konum: System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   konum: System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   konum: System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   konum: System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   konum: System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   konum: System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   konum: NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   konum: NHibernate.AdoNet.ConnectionManager.GetConnection()
+   konum: NHibernate.Impl.SessionImpl.get_Connection()
+   konum: NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2019-07-02 22:30:06,876 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,908 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:06,924 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,928 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:06,960 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,960 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:06,980 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,980 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:07,020 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,024 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:07,052 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,056 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:07,072 [28] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,076 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/]
+2019-07-02 22:30:10,710 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,710 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,722 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,726 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,758 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,758 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,786 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,790 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,815 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,819 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,847 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,847 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,883 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,883 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,911 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,915 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,951 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,955 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:10,983 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,987 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]
+2019-07-02 22:30:11,011 [60] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'System.Web.Services' [http://localhost:30321/OrchardLocal/Admin]
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:11,015 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded [http://localhost:30321/OrchardLocal/Admin]

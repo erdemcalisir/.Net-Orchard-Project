@@ -1,0 +1,373 @@
+2019-06-26 18:41:14,393 [11] Orchard.Data.Migration.DataMigrationManager - Default - ERROR Error while running migration version 0 for Settings.
+System.Reflection.TargetInvocationException: Özel durum bir çaðýrma hedefi tarafýndan oluþturuldu. ---> NHibernate.Exceptions.GenericADOException: could not execute query
+[ select contentpar0_.Id as Id12_0_, contentpar1_.Id as Id13_1_, contentfie2_.Id as Id11_2_, contentpar0_.Name as Name12_0_, contentpar0_.Hidden as Hidden12_0_, contentpar0_.Settings as Settings12_0_, contentpar1_.Name as Name13_1_, contentpar1_.Settings as Settings13_1_, contentpar1_.ContentFieldDefinitionRecord_id as ContentF4_13_1_, contentpar1_.ContentPartDefinitionRecord_id as ContentP5_0__, contentpar1_.Id as Id0__, contentfie2_.Name as Name11_2_ from Settings_ContentPartDefinitionRecord contentpar0_ left outer join Settings_ContentPartFieldDefinitionRecord contentpar1_ on contentpar0_.Id=contentpar1_.ContentPartDefinitionRecord_id left outer join Settings_ContentFieldDefinitionRecord contentfie2_ on contentpar1_.ContentFieldDefinitionRecord_id=contentfie2_.Id ]
+[SQL: select contentpar0_.Id as Id12_0_, contentpar1_.Id as Id13_1_, contentfie2_.Id as Id11_2_, contentpar0_.Name as Name12_0_, contentpar0_.Hidden as Hidden12_0_, contentpar0_.Settings as Settings12_0_, contentpar1_.Name as Name13_1_, contentpar1_.Settings as Settings13_1_, contentpar1_.ContentFieldDefinitionRecord_id as ContentF4_13_1_, contentpar1_.ContentPartDefinitionRecord_id as ContentP5_0__, contentpar1_.Id as Id0__, contentfie2_.Name as Name11_2_ from Settings_ContentPartDefinitionRecord contentpar0_ left outer join Settings_ContentPartFieldDefinitionRecord contentpar1_ on contentpar0_.Id=contentpar1_.ContentPartDefinitionRecord_id left outer join Settings_ContentFieldDefinitionRecord contentfie2_ on contentpar1_.ContentFieldDefinitionRecord_id=contentfie2_.Id] ---> System.Data.SqlClient.SqlException: Invalid column name 'ContentPartDefinitionRecord_id'.
+Invalid column name 'ContentPartDefinitionRecord_id'.
+   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   konum: System.Data.SqlClient.SqlDataReader.get_MetaData()
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   konum: System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   konum: NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   konum: NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   konum: NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   konum: NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   konum: NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   konum: NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   konum: NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   konum: NHibernate.Loader.Hql.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   konum: NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   konum: NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   konum: NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
+   konum: NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
+   konum: NHibernate.Impl.AbstractQueryImpl2.List()
+   konum: NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
+   konum: NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
+   konum: Remotion.Linq.QueryableBase`1.GetEnumerator()
+   konum: Orchard.Data.FetchRequest`2.GetEnumerator() C:\Projeler\Orchard-1.10.3\src\Orchard\Data\FetchRequest.cs içinde: satýr 36
+   konum: System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   konum: System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   konum: Orchard.Core.Settings.Metadata.ContentDefinitionManager.<AcquireContentPartDefinitions>b__20_0(AcquireContext`1 ctx) C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Metadata\ContentDefinitionManager.cs içinde: satýr 151
+   konum: Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 57
+   konum: Orchard.Caching.Cache`2.AddEntry(TKey k, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 27
+   konum: Orchard.Caching.Cache`2.<>c__DisplayClass3_0.<Get>b__0(TKey k) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 19
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   konum: Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 17
+   konum: Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\DefaultCacheManager.cs içinde: satýr 33
+   konum: Orchard.Caching.CacheManagerExtensions.Get[TKey,TResult](ICacheManager cacheManager, TKey key, Boolean preventConcurrentCalls, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\ICacheManager.cs içinde: satýr 13
+   konum: Orchard.Core.Settings.Metadata.ContentDefinitionManager.AcquireContentPartDefinitions() C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Metadata\ContentDefinitionManager.cs içinde: satýr 143
+   konum: Orchard.Core.Settings.Metadata.ContentDefinitionManager.<AcquireContentTypeDefinitions>b__19_0(AcquireContext`1 ctx) C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Metadata\ContentDefinitionManager.cs içinde: satýr 131
+   konum: Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 57
+   konum: Orchard.Caching.Cache`2.AddEntry(TKey k, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 27
+   konum: Orchard.Caching.Cache`2.<>c__DisplayClass3_0.<Get>b__0(TKey k) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 19
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   konum: Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\Cache.cs içinde: satýr 17
+   konum: Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\DefaultCacheManager.cs içinde: satýr 33
+   konum: Orchard.Caching.CacheManagerExtensions.Get[TKey,TResult](ICacheManager cacheManager, TKey key, Boolean preventConcurrentCalls, Func`2 acquire) C:\Projeler\Orchard-1.10.3\src\Orchard\Caching\ICacheManager.cs içinde: satýr 13
+   konum: Orchard.Core.Settings.Metadata.ContentDefinitionManager.AcquireContentTypeDefinitions() C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Metadata\ContentDefinitionManager.cs içinde: satýr 128
+   konum: Orchard.Core.Settings.Metadata.ContentDefinitionManager.GetTypeDefinition(String name) C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Metadata\ContentDefinitionManager.cs içinde: satýr 44
+   konum: Orchard.ContentManagement.MetaData.ContentDefinitionManagerExtensions.AlterTypeDefinition(IContentDefinitionManager manager, String name, Action`1 alteration) C:\Projeler\Orchard-1.10.3\src\Orchard\ContentManagement\MetaData\IContentDefinitionManager.cs içinde: satýr 24
+   konum: Orchard.Core.Settings.Migrations.Create() C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Migrations.cs içinde: satýr 85
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   konum: System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   konum: System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   konum: System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   konum: Orchard.Data.Migration.DataMigrationManager.Update(String feature) C:\Projeler\Orchard-1.10.3\src\Orchard\Data\Migration\DataMigrationManager.cs içinde: satýr 115
+2019-06-26 19:28:08,696 [13] Orchard.Recipes.Services.RecipeManager - Default - INFO Executing recipe 'Default'.
+2019-06-26 19:28:08,719 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Feature'.
+2019-06-26 19:28:08,735 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'ContentDefinition'.
+2019-06-26 19:28:08,746 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Settings'.
+2019-06-26 19:28:08,758 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Migration'.
+2019-06-26 19:28:08,772 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Command'.
+2019-06-26 19:28:08,788 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'ActivateShell'.
+2019-06-26 19:28:08,894 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:08,898 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Feature'.
+2019-06-26 19:28:08,901 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Feature'.
+2019-06-26 19:28:08,908 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Feature'.
+2019-06-26 19:28:08,913 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO FeatureStep: Enabling features: Orchard.Blogs;Orchard.Comments;Orchard.Tags;Orchard.Alias;Orchard.Autoroute;TinyMce;Orchard.MediaLibrary;Orchard.ContentPicker;Orchard.PublishLater;Orchard.Resources;Orchard.Widgets;Orchard.ContentTypes;Orchard.Scripting;Orchard.Scripting.Lightweight;PackagingServices;Orchard.Packaging;Orchard.Projections;Orchard.Fields;Orchard.OutputCache;Orchard.Taxonomies;Orchard.Workflows;Orchard.Layouts;Orchard.Layouts.Tokens;TheThemeMachine
+2019-06-26 19:28:09,017 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Feature'.
+2019-06-26 19:28:09,048 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:11,135 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:11,138 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'ContentDefinition'.
+2019-06-26 19:28:11,140 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'ContentDefinition'.
+2019-06-26 19:28:11,143 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'ContentDefinition'.
+2019-06-26 19:28:11,146 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content type 'Page'.
+2019-06-26 19:28:11,264 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content type 'BlogPost'.
+2019-06-26 19:28:11,283 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content part 'BodyPart'.
+2019-06-26 19:28:11,293 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'ContentDefinition'.
+2019-06-26 19:28:11,302 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:11,404 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:11,406 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Settings'.
+2019-06-26 19:28:11,409 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Settings'.
+2019-06-26 19:28:11,411 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Settings'.
+2019-06-26 19:28:11,532 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Settings'.
+2019-06-26 19:28:11,540 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:11,631 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:11,634 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Migration'.
+2019-06-26 19:28:11,636 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Migration'.
+2019-06-26 19:28:11,638 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Migration'.
+2019-06-26 19:28:11,736 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Migration'.
+2019-06-26 19:28:11,743 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:11,844 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:11,846 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Command'.
+2019-06-26 19:28:11,848 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Command'.
+2019-06-26 19:28:11,851 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Command'.
+2019-06-26 19:28:11,854 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Default /LayerRule:"true" /Description:"The widgets in this layer are displayed on all pages"
+2019-06-26 19:28:12,053 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Authenticated /LayerRule:"authenticated" /Description:"The widgets in this layer are displayed when the user is authenticated"
+2019-06-26 19:28:12,072 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Anonymous /LayerRule:"not authenticated" /Description:"The widgets in this layer are displayed when the user is anonymous"
+2019-06-26 19:28:12,092 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Disabled /LayerRule:"false" /Description:"The widgets in this layer are never displayed"
+2019-06-26 19:28:12,113 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create TheHomepage /LayerRule:"url '~/'" /Description:"The widgets in this layer are displayed on the home page"
+2019-06-26 19:28:12,134 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: site setting set baseurl
+2019-06-26 19:28:12,139 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: menu create /MenuName:"Main Menu"
+2019-06-26 19:28:12,159 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: page create /Slug:"welcome-to-orchard" /Title:"Welcome to Orchard!" /Path:"welcome-to-orchard" /Homepage:true /Publish:true /UseWelcomeText:true
+2019-06-26 19:28:12,584 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: menuitem create /MenuPosition:"0" /MenuText:"Home" /Url:"~/" /MenuName:"Main Menu"
+2019-06-26 19:28:12,627 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+2019-06-26 19:28:12,685 [13] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: theme activate "The Theme Machine"
+2019-06-26 19:28:12,691 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Command'.
+2019-06-26 19:28:12,698 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:12,844 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:12,847 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'ActivateShell'.
+2019-06-26 19:28:12,849 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'ActivateShell'.
+2019-06-26 19:28:12,852 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'ActivateShell'.
+2019-06-26 19:28:12,858 [13] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'ActivateShell'.
+2019-06-26 19:28:12,934 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-06-26 19:28:13,035 [13] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-06-26 19:28:13,038 [13] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO No more recipe steps left to execute.
+2019-06-26 19:28:13,041 [13] Orchard.Recipes.Services.RecipeScheduler - Default - INFO All recipe steps executed; restarting shell.
+2019-06-26 20:35:59,194 [19] Orchard.Environment.Extensions.ExtensionManager - (null) - WARN No suitable loader found for extension "Orchard.Webshop"
+2019-06-26 20:51:03,525 [50] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - (null) - WARN No loader found for extension "Orchard.Webshop"!
+2019-06-26 20:51:06,373 [40] Orchard.Environment.Extensions.ExtensionManager - (null) - WARN No suitable loader found for extension "Orchard.Webshop"
+2019-06-26 21:19:44,660 [45] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.AssemblyBuilder.Compile()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:44,671 [45] Orchard.Environment.Extensions.ExtensionManager - (null) - WARN No suitable loader found for extension "Orchard.Webshop"
+2019-06-26 21:19:49,136 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:49,163 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:49,178 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:49,184 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:49,189 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:19:49,194 [54] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,437 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.AssemblyBuilder.Compile()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,443 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,450 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,471 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,477 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,485 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,505 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,519 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,539 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:22:24,554 [53] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Models\ProductPartRecord.cs(8): error CS0246: The type or namespace name 'ContentPartRecord' could not be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:20,127 [20] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.AssemblyBuilder.Compile()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:20,134 [20] Orchard.Environment.Extensions.ExtensionManager - (null) - WARN No suitable loader found for extension "Orchard.Webshop"
+2019-06-26 21:45:24,947 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:24,955 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:24,960 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:24,966 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:24,982 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-06-26 21:45:24,995 [52] Orchard.Environment.DefaultBuildManager - (null) - WARN Error when compiling assembly under ~/Modules/Orchard.Webshop/Orchard.Webshop.csproj.
+System.Web.HttpCompileException (0x80004005): C:\Projeler\Orchard-1.10.3\src\Orchard.Web\Modules\Orchard.Webshop\Migrations.cs(31): error CS1061: 'IContentDefinitionManager' does not contain a definition for 'AlterPartDefinition' and no accessible extension method 'AlterPartDefinition' accepting a first argument of type 'IContentDefinitionManager' could be found (are you missing a using directive or an assembly reference?)
+   konum: System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53

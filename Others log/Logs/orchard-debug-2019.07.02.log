@@ -1,0 +1,736 @@
+2019-07-02 22:18:38,772 [23] NHibernate.Transaction.AdoTransaction - (null) - ERROR Begin transaction failed
+System.ArgumentException: Anahtar sözcük desteklenmiyor: 'defaultendpointsprotocol'.
+   konum: System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   konum: System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   konum: System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   konum: System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   konum: System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   konum: System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   konum: System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   konum: NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   konum: NHibernate.AdoNet.ConnectionManager.GetConnection()
+   konum: NHibernate.Impl.SessionImpl.get_Connection()
+   konum: NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2019-07-02 22:18:38,802 [23] NHibernate.Transaction.AdoTransaction - (null) - ERROR Begin transaction failed
+System.ArgumentException: Anahtar sözcük desteklenmiyor: 'defaultendpointsprotocol'.
+   konum: System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   konum: System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   konum: System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   konum: System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   konum: System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   konum: System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   konum: System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   konum: NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   konum: NHibernate.AdoNet.ConnectionManager.GetConnection()
+   konum: NHibernate.Impl.SessionImpl.get_Connection()
+   konum: NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2019-07-02 22:19:25,867 [10] Orchard.Recipes.Services.RecipeManager - Default - INFO Executing recipe 'Default'.
+2019-07-02 22:19:25,871 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Feature'.
+2019-07-02 22:19:25,887 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'ContentDefinition'.
+2019-07-02 22:19:25,899 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Settings'.
+2019-07-02 22:19:25,911 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Migration'.
+2019-07-02 22:19:25,923 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'Command'.
+2019-07-02 22:19:25,939 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Enqueuing recipe step 'ActivateShell'.
+2019-07-02 22:19:26,047 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:26,051 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Feature'.
+2019-07-02 22:19:26,055 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Feature'.
+2019-07-02 22:19:26,059 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Feature'.
+2019-07-02 22:19:26,063 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO FeatureStep: Enabling features: Orchard.Blogs;Orchard.Comments;Orchard.Tags;Orchard.Alias;Orchard.Autoroute;TinyMce;Orchard.MediaLibrary;Orchard.ContentPicker;Orchard.PublishLater;Orchard.Resources;Orchard.Widgets;Orchard.ContentTypes;Orchard.Scripting;Orchard.Scripting.Lightweight;PackagingServices;Orchard.Packaging;Orchard.Projections;Orchard.Fields;Orchard.OutputCache;Orchard.Taxonomies;Orchard.Workflows;Orchard.Layouts;Orchard.Layouts.Tokens;TheThemeMachine
+2019-07-02 22:19:26,211 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Feature'.
+2019-07-02 22:19:26,235 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:29,195 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:29,195 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'ContentDefinition'.
+2019-07-02 22:19:29,199 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'ContentDefinition'.
+2019-07-02 22:19:29,203 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'ContentDefinition'.
+2019-07-02 22:19:29,207 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content type 'Page'.
+2019-07-02 22:19:29,359 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content type 'BlogPost'.
+2019-07-02 22:19:29,379 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO ContentDefinitionStep: Importing content part 'BodyPart'.
+2019-07-02 22:19:29,391 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'ContentDefinition'.
+2019-07-02 22:19:29,399 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:29,527 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:29,531 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Settings'.
+2019-07-02 22:19:29,531 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Settings'.
+2019-07-02 22:19:29,535 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Settings'.
+2019-07-02 22:19:29,682 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Settings'.
+2019-07-02 22:19:29,690 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:29,830 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:29,830 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Migration'.
+2019-07-02 22:19:29,834 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Migration'.
+2019-07-02 22:19:29,838 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Migration'.
+2019-07-02 22:19:29,938 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Migration'.
+2019-07-02 22:19:29,942 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:30,065 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:30,069 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'Command'.
+2019-07-02 22:19:30,073 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'Command'.
+2019-07-02 22:19:30,073 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'Command'.
+2019-07-02 22:19:30,077 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Default /LayerRule:"true" /Description:"The widgets in this layer are displayed on all pages"
+2019-07-02 22:19:30,317 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Authenticated /LayerRule:"authenticated" /Description:"The widgets in this layer are displayed when the user is authenticated"
+2019-07-02 22:19:30,341 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Anonymous /LayerRule:"not authenticated" /Description:"The widgets in this layer are displayed when the user is anonymous"
+2019-07-02 22:19:30,365 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create Disabled /LayerRule:"false" /Description:"The widgets in this layer are never displayed"
+2019-07-02 22:19:30,385 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: layer create TheHomepage /LayerRule:"url '~/'" /Description:"The widgets in this layer are displayed on the home page"
+2019-07-02 22:19:30,407 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: site setting set baseurl
+2019-07-02 22:19:30,415 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: menu create /MenuName:"Main Menu"
+2019-07-02 22:19:30,435 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: page create /Slug:"welcome-to-orchard" /Title:"Welcome to Orchard!" /Path:"welcome-to-orchard" /Homepage:true /Publish:true /UseWelcomeText:true
+2019-07-02 22:19:30,886 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: menuitem create /MenuPosition:"0" /MenuText:"Home" /Url:"~/" /MenuName:"Main Menu"
+2019-07-02 22:19:30,926 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+2019-07-02 22:19:30,982 [10] Orchard.Recipes.Services.RecipeExecutionLogger - Default - INFO CommandStep: Executing command: theme activate "The Theme Machine"
+2019-07-02 22:19:30,986 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'Command'.
+2019-07-02 22:19:30,998 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:31,134 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:31,138 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe step 'ActivateShell'.
+2019-07-02 22:19:31,138 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO Executing recipe step 'ActivateShell'.
+2019-07-02 22:19:31,142 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Executing recipe step 'ActivateShell'.
+2019-07-02 22:19:31,150 [10] Orchard.Recipes.Providers.RecipeHandlers.RecipeExecutionStepHandler - Default - INFO Finished executing recipe step 'ActivateShell'.
+2019-07-02 22:19:31,246 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO Scheduling next step of recipe.
+2019-07-02 22:19:31,358 [10] Orchard.Recipes.Services.RecipeStepQueue - Default - INFO Dequeuing recipe steps.
+2019-07-02 22:19:31,358 [10] Orchard.Recipes.Services.RecipeStepExecutor - Default - INFO No more recipe steps left to execute.
+2019-07-02 22:19:31,362 [10] Orchard.Recipes.Services.RecipeScheduler - Default - INFO All recipe steps executed; restarting shell.
+2019-07-02 22:30:06,876 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,908 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:06,924 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,928 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:06,932 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:06,960 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,960 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:06,964 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:06,980 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:06,980 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:06,984 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:07,020 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,024 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:07,028 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:07,052 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,056 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:07,060 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:07,072 [28] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:07,076 [28] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:07,080 [28] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,710 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,710 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,722 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,726 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,730 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,758 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,758 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,762 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,786 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,790 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,790 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,815 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,819 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,823 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,847 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,847 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,851 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,883 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,883 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,887 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,911 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,915 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,915 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,951 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,955 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,955 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:10,983 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:10,987 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:10,991 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:30:11,011 [60] Orchard.Environment.DefaultAssemblyLoader - Default - ERROR Error loading assembly 'System.Web.Services'
+System.IO.FileNotFoundException: 'System.Web.Services' dosyasýný veya bütünleþtirilmiþ kodunu ya da baðýmlýlýklarýndan birini yükleyemedi. Sistem belirtilen dosyayý bulamýyor.
+Dosya adý: 'System.Web.Services'
+   konum: System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   konum: System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   konum: System.Reflection.Assembly.Load(String assemblyString)
+   konum: Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 61
+   konum: Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass7_0.<Load>b__0(String shortName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+   konum: System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   konum: Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IAssemblyLoader.cs içinde: satýr 28
+
+UYR: Bütünleþtirilmiþ kod baðlama günlük kaydý kapatýldý.
+Bütünleþtirilmiþ kod baðlama hatasý günlük kayýný etkinleþtirmek için, [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) kayýt defteri deðerini 1 olarak ayarlayýn.
+Not: Bütünleþtirilmiþ kod baðlama hatasý günlük kaydýyla iliþkili bazý performans cezasý vardýr.
+Bu özelliði kapatmak için [HKLM\Software\Microsoft\Fusion!EnableLog] kayýt defteri deðerini kaldýrýn.
+
+2019-07-02 22:30:11,015 [60] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - ERROR Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+2019-07-02 22:30:11,019 [60] Orchard.Environment.DefaultBuildManager - Default - WARN Error when compiling assembly under ~/Modules/WebApplication1/WebApplication1.csproj.
+System.Web.HttpParseException (0x80004005): Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Error compiling module "WebApplication1" from file "/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj":
+Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded ---> Orchard.OrchardCoreException: Assembly reference 'System.Web.Services' for project '/OrchardLocal/Modules/WebApplication1/WebApplication1.csproj' cannot be loaded
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 106
+   --- Ýç özel durum yýðýný izlemesinin sonu ---
+   konum: Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler.Compile(CompileExtensionContext context) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\DefaultExtensionCompiler.cs içinde: satýr 116
+   konum: Orchard.Environment.Extensions.Compilers.CSharpExtensionBuildProviderShim.GenerateCode(AssemblyBuilder assemblyBuilder) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\Extensions\Compilers\CSharpExtensionBuildProviderShim.cs içinde: satýr 31
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.AssemblyBuilder.AddBuildProvider(BuildProvider buildProvider)
+   konum: System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   konum: System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   konum: System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   konum: System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   konum: Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) C:\Projeler8\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\IBuildManager.cs içinde: satýr 53
+2019-07-02 22:40:57,914 [31] Orchard.Environment.Extensions.ExtensionManager - (null) - WARN No suitable loader found for extension "Erdem.TodoList"

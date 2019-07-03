@@ -1,0 +1,10 @@
+2019-07-01 18:12:21,089 [14] Orchard.ContentManagement.DefaultContentManager - Default - NullReferenceException thrown from IContentHandler by Orchard.Autoroute.Handlers.AutoroutePartHandler [http://localhost:30321/OrchardLocal/Admin/Contents/Remove/16]
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: Orchard.Autoroute.Services.AutorouteService.RemoveAliases(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.RemoveAlias(AutoroutePart part)
+   konum: Orchard.Autoroute.Handlers.AutoroutePartHandler.<.ctor>b__8_3(RemoveContentContext ctx, AutoroutePart part)
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.InlineStorageFilter`1.Removing(RemoveContentContext context, TPart instance) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 227
+   konum: Orchard.ContentManagement.Handlers.StorageFilterBase`1.Orchard.ContentManagement.Handlers.IContentStorageFilter.Removing(RemoveContentContext context) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\StorageFilterBase.cs içinde: satýr 113
+   konum: Orchard.ContentManagement.Handlers.ContentHandler.Orchard.ContentManagement.Handlers.IContentHandler.Removing(RemoveContentContext context) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\ContentManagement\Handlers\ContentHandler.cs içinde: satýr 403
+   konum: Orchard.ContentManagement.DefaultContentManager.<>c__DisplayClass37_0.<Remove>b__1(IContentHandler handler) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\ContentManagement\DefaultContentManager.cs içinde: satýr 434
+   konum: Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) C:\Projeler7\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\InvokeExtensions.cs içinde: satýr 17
