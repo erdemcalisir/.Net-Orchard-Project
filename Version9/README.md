@@ -1,0 +1,1 @@
+sıfırdan proje yazılarak başlıca module partları oluşturuldu.

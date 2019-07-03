@@ -1,0 +1,1 @@
+İnternetteki örnek kalıbı, kısmen gerçekleşrildi.

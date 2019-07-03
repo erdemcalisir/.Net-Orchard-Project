@@ -1,0 +1,1 @@
+azure table bağlantılı proje oluşturulup tablolar kontrol edilebildi.

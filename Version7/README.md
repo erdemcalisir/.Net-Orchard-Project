@@ -1,0 +1,1 @@
+webshop üzerinden metotlar ve değerler değiştirilmeye çalışarak ilerlendi
