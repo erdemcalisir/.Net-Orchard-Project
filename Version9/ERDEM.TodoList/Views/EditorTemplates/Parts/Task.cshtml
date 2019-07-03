@@ -1,0 +1,26 @@
+﻿@model ERDEM.TodoList.Models.TaskPart
+    <fieldset>
+        <legend>Works Fields</legend>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Title)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.Title)
+            @Html.ValidationMessageFor(x => x.Title)
+        </div>
+        <div class="hint">Enter task title</div>
+
+
+        <div class="editor-label">@Html.LabelFor(x => x.Content)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.Content)
+            @Html.ValidationMessageFor(x => x.Content)
+        </div>
+        <div class="hint">Enter the Content</div>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Statu)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.Statu)
+            @Html.ValidationMessageFor(x => x.Statu)
+        </div>
+        <div class="hint">Enter the Statu</div>
+    </fieldset>

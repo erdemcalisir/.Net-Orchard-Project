@@ -1,0 +1,11 @@
+﻿Name: Erdem.WebShop
+AntiForgery: enabled
+Author: The Orchard Team
+Website: https://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.10.3
+Description: Description for the module
+Category: Webshop
+Features:
+    Erdem.WebShop:
+        Description: Description for feature Erdem.WebShop.

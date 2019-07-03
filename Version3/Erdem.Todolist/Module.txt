@@ -1,0 +1,10 @@
+﻿Name: Erdem.Todolist
+AntiForgery: enabled
+Author: The Orchard Team
+Website: https://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.10.3
+Description: Description for the module
+Features:
+    Erdem.Todolist:
+        Description: Description for feature Erdem.Todolist.
