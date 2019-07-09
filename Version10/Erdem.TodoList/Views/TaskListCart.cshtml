@@ -1,0 +1,43 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.Core.Title.Models
+@using Erdem.TodoList.Models
+@{
+    Style.Require("Erdem.TodoList.TaskListCart");
+    var items = (IList<dynamic>)Model.Tasks;
+}
+    <article class="tasklistcart">
+        <table>
+            <thead>
+                <tr>
+                    <td>Article</td>
+                    <td class="numeric">Title</td>
+                    <td class="numeric">Content</td>
+                    <td class="numeric">Statu</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in items)
+                {
+                    var task = item.TaskPart;
+                    var title = item.Title;
+
+                <tr>
+                    <td>@title</td>
+                    <td class="numeric">@task.Title</td>
+                    @* <td class="action"><a class="icon delete" href="#"></a></td>*@
+                    <td class="numeric">@task.Content</td>
+                    <td class="checkbox">@task.Statu</td>
+
+                </tr>
+                }
+            </tbody>
+           
+        </table>
+        <footer>
+            <div class="group">
+                <div class="align left"><a class="button" href="#">Continue shopping</a></div>
+                <div class="align right"><a class="button next" href="#">Proceed to checkout</a></div>
+            </div>
+        </footer>
+    </article>

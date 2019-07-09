@@ -1,0 +1,27 @@
+﻿@using System.Web.Mvc.Html
+@model Erdem.TodoList.Models.TaskPart
+<fieldset>
+    <legend>Product Fields</legend>
+
+    <div class="editor-label">@Html.LabelFor(x => x.TaskTitle)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.TaskTitle)
+        @Html.ValidationMessageFor(x => x.TaskTitle)
+    </div>
+    <div class="hint">Enter the Stock Keeping Unit</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.TaskContent)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.TaskContent)
+        @Html.ValidationMessageFor(x => x.TaskContent)
+    </div>
+    <div class="hint">Enter the sales price per unit</div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.TaskStatu)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.TaskStatu)
+        @Html.ValidationMessageFor(x => x.TaskStatu)
+    </div>
+    <div class="hint">Enter the sales price per unit</div>
+
+</fieldset>

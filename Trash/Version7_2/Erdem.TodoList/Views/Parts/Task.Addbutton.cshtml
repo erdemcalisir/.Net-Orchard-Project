@@ -1,0 +1,7 @@
+﻿@{
+    var taskId = (int)Model.TaskId;
+}
+@using (Html.BeginFormAntiForgeryPost(Url.Action("Add", "TodoList", new { id = taskId, area = "Erdem.TodoList" })))
+{
+    <button type="submit">@T("Add to todolist")</button>
+}

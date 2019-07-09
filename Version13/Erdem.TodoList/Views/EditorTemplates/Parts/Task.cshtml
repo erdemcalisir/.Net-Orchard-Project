@@ -1,0 +1,24 @@
+﻿@model Erdem.TodoList.Models.TaskPart
+
+    <fieldset>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsDone,
+                T(Html.DisplayNameFor(model => model.IsDone).ToHtmlString()))
+        </div>
+        <div class="editor-field">
+            @Html.CheckBoxFor(model => model.IsDone)
+            @Html.ValidationMessageFor(model => model.IsDone)
+        </div>
+
+
+    </fieldset>

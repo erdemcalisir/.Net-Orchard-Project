@@ -1,0 +1,140 @@
+2019-07-06 19:56:13,972 [66] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:14,008 [66] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default Attempt number: 0 [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+   konum: NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompile()
+   konum: NHibernate.Cfg.Configuration.GetObjectData(SerializationInfo info, StreamingContext context)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize(Object graph, Header[] inHeaders, __BinaryWriter serWriter, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph, Header[] headers, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph)
+   konum: Orchard.Data.SessionConfigurationCache.StoreConfiguration(ConfigurationCache cache) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 81
+   konum: Orchard.Data.SessionConfigurationCache.GetConfiguration(Func`1 builder) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 65
+   konum: Orchard.Data.SessionFactoryHolder.BuildConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 97
+   konum: Orchard.Data.SessionFactoryHolder.GetConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 78
+   konum: Orchard.Data.SessionFactoryHolder.BuildSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 87
+   konum: Orchard.Data.SessionFactoryHolder.GetSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 69
+   konum: Orchard.Data.TransactionManager.EnsureSession(IsolationLevel level) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 117
+   konum: Orchard.Data.TransactionManager.Demand() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 60
+   konum: Orchard.Data.TransactionManager.GetSession() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 56
+   konum: Orchard.Data.Repository`1.get_Session() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 23
+   konum: Orchard.Data.Repository`1.get_Table() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 27
+   konum: Orchard.Data.Repository`1.Fetch(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 147
+   konum: Orchard.Data.Repository`1.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 88
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 57
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 54
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 27
+   konum: Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs içinde: satýr 66
+   konum: Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 228
+   konum: Orchard.Environment.DefaultOrchardHost.<CreateAndActivateShells>b__41_1(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 160
+2019-07-06 19:56:15,254 [66] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:15,258 [66] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default after 1 retries. [(null)]
+2019-07-06 19:56:15,628 [66] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:15,631 [66] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default Attempt number: 0 [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+   konum: NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompile()
+   konum: NHibernate.Cfg.Configuration.GetObjectData(SerializationInfo info, StreamingContext context)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize(Object graph, Header[] inHeaders, __BinaryWriter serWriter, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph, Header[] headers, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph)
+   konum: Orchard.Data.SessionConfigurationCache.StoreConfiguration(ConfigurationCache cache) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 81
+   konum: Orchard.Data.SessionConfigurationCache.GetConfiguration(Func`1 builder) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 65
+   konum: Orchard.Data.SessionFactoryHolder.BuildConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 97
+   konum: Orchard.Data.SessionFactoryHolder.GetConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 78
+   konum: Orchard.Data.SessionFactoryHolder.BuildSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 87
+   konum: Orchard.Data.SessionFactoryHolder.GetSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 69
+   konum: Orchard.Data.TransactionManager.EnsureSession(IsolationLevel level) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 117
+   konum: Orchard.Data.TransactionManager.Demand() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 60
+   konum: Orchard.Data.TransactionManager.GetSession() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 56
+   konum: Orchard.Data.Repository`1.get_Session() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 23
+   konum: Orchard.Data.Repository`1.get_Table() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 27
+   konum: Orchard.Data.Repository`1.Fetch(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 147
+   konum: Orchard.Data.Repository`1.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 88
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 57
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 54
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 27
+   konum: Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs içinde: satýr 66
+   konum: Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 228
+   konum: Orchard.Environment.DefaultOrchardHost.<CreateAndActivateShells>b__41_1(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 160
+2019-07-06 19:56:16,835 [66] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [(null)]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:16,839 [66] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default after 1 retries. [(null)]
+2019-07-06 19:56:17,300 [74] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:17,304 [74] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default Attempt number: 0 [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+   konum: NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompile()
+   konum: NHibernate.Cfg.Configuration.GetObjectData(SerializationInfo info, StreamingContext context)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize(Object graph, Header[] inHeaders, __BinaryWriter serWriter, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph, Header[] headers, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph)
+   konum: Orchard.Data.SessionConfigurationCache.StoreConfiguration(ConfigurationCache cache) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 81
+   konum: Orchard.Data.SessionConfigurationCache.GetConfiguration(Func`1 builder) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 65
+   konum: Orchard.Data.SessionFactoryHolder.BuildConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 97
+   konum: Orchard.Data.SessionFactoryHolder.GetConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 78
+   konum: Orchard.Data.SessionFactoryHolder.BuildSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 87
+   konum: Orchard.Data.SessionFactoryHolder.GetSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 69
+   konum: Orchard.Data.TransactionManager.EnsureSession(IsolationLevel level) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 117
+   konum: Orchard.Data.TransactionManager.Demand() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 60
+   konum: Orchard.Data.TransactionManager.GetSession() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 56
+   konum: Orchard.Data.Repository`1.get_Session() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 23
+   konum: Orchard.Data.Repository`1.get_Table() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 27
+   konum: Orchard.Data.Repository`1.Fetch(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 147
+   konum: Orchard.Data.Repository`1.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 88
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 57
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 54
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 27
+   konum: Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs içinde: satýr 66
+   konum: Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 228
+   konum: Orchard.Environment.DefaultOrchardHost.<CreateAndActivateShells>b__41_1(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 160
+2019-07-06 19:56:18,497 [74] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:56:18,500 [74] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default after 1 retries. [http://localhost:30321/OrchardLocal/]
+2019-07-06 19:58:49,807 [82] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:58:49,811 [82] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default Attempt number: 0 [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+   konum: NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompileForeignKeys(Table table, ISet`1 done)
+   konum: NHibernate.Cfg.Configuration.SecondPassCompile()
+   konum: NHibernate.Cfg.Configuration.GetObjectData(SerializationInfo info, StreamingContext context)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.InitSerialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo.Serialize(Object obj, ISurrogateSelector surrogateSelector, StreamingContext context, SerObjectInfoInit serObjectInfoInit, IFormatterConverter converter, ObjectWriter objectWriter, SerializationBinder binder)
+   konum: System.Runtime.Serialization.Formatters.Binary.ObjectWriter.Serialize(Object graph, Header[] inHeaders, __BinaryWriter serWriter, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph, Header[] headers, Boolean fCheck)
+   konum: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(Stream serializationStream, Object graph)
+   konum: Orchard.Data.SessionConfigurationCache.StoreConfiguration(ConfigurationCache cache) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 81
+   konum: Orchard.Data.SessionConfigurationCache.GetConfiguration(Func`1 builder) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionConfigurationCache.cs içinde: satýr 65
+   konum: Orchard.Data.SessionFactoryHolder.BuildConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 97
+   konum: Orchard.Data.SessionFactoryHolder.GetConfiguration() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 78
+   konum: Orchard.Data.SessionFactoryHolder.BuildSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 87
+   konum: Orchard.Data.SessionFactoryHolder.GetSessionFactory() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionFactoryHolder.cs içinde: satýr 69
+   konum: Orchard.Data.TransactionManager.EnsureSession(IsolationLevel level) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 117
+   konum: Orchard.Data.TransactionManager.Demand() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 60
+   konum: Orchard.Data.TransactionManager.GetSession() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\SessionLocator.cs içinde: satýr 56
+   konum: Orchard.Data.Repository`1.get_Session() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 23
+   konum: Orchard.Data.Repository`1.get_Table() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 27
+   konum: Orchard.Data.Repository`1.Fetch(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 147
+   konum: Orchard.Data.Repository`1.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 88
+   konum: Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Data\Repository.cs içinde: satýr 57
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 54
+   konum: Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs içinde: satýr 27
+   konum: Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs içinde: satýr 66
+   konum: Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 228
+   konum: Orchard.Environment.DefaultOrchardHost.<CreateAndActivateShells>b__41_1(ShellSettings settings) C:\Projeler9\Orchard-1.10.3\Orchard-1.10.3\src\Orchard\Environment\DefaultOrchardHost.cs içinde: satýr 160
+2019-07-06 19:58:51,007 [82] NHibernate.Cfg.Configuration - (null) - An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart [http://localhost:30321/OrchardLocal/]
+NHibernate.MappingException: An association from the table ERDEM_TodoList_TaskListPartRecord refers to an unmapped class: ERDEM.TodoList.Models.TaskPart
+2019-07-06 19:58:51,010 [82] Orchard.Environment.DefaultOrchardHost - (null) - A tenant could not be started: Default after 1 retries. [http://localhost:30321/OrchardLocal/]
