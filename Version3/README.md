@@ -1,1 +1,1 @@
-İnternetteki örnek kalıbı, kısmen gerçekleşrildi.
+İnternetteki örnek kalıbı, kısmen gerçekleşrildi
